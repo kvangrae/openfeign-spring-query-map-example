@@ -23,11 +23,11 @@ public class TestController {
 
     @GetMapping(produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<String> get() {
-        return ok(service.helloWorld(new User("jimmy")));
+        return ok(service.helloWorld(new User("jimmy", "jimmy@example.org", 25)));
     }
 
     @GetMapping(value = "/hello", produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<String> one(@ModelAttribute User user) {
-        return ok(format("\"hello %s!\"", user.getName()));
+        return ok(format("\"hello %s (email: %s, age: %d)!\"", user.getName(), user.getEmail(), user.getAge()));
     }
 }
