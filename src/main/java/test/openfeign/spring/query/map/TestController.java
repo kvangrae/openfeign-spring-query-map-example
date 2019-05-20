@@ -27,7 +27,7 @@ public class TestController {
     }
 
     @GetMapping(value = "/hello", produces = APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> one(@ModelAttribute User user) {
+    public ResponseEntity<String> hello(@ModelAttribute User user) {
         return ok(format("\"hello %s (email: %s, age: %d)!\"", user.getName(), user.getEmail(), user.getAge()));
     }
 }
