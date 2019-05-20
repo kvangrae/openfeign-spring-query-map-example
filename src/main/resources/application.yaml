@@ -1,0 +1,4 @@
+feign.client.config.default.loggerLevel: full
+logging.level.test.getpostbug.TestClient: DEBUG
+
+test.ribbon.listOfServers: localhost:8080
