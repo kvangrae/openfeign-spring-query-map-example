@@ -11,5 +11,5 @@ public interface TestClient extends HelloWorldService {
 
     @Override
     @GetMapping(value = "/hello", produces = APPLICATION_JSON_VALUE)
-    String helloWorld(@SpringQueryMap User user);
+    String sayHelloToUser(@SpringQueryMap User user);
 }
