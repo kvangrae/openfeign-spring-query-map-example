@@ -2,5 +2,5 @@ package test.getpostbug;
 
 public interface HelloWorldService {
 
-    String helloWorld();
+    String helloWorld(User user);
 }
