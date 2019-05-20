@@ -1,4 +1,4 @@
 feign.client.config.default.loggerLevel: full
-logging.level.test.getpostbug.TestClient: DEBUG
+logging.level.test.openfeign.spring.query.map.TestClient: DEBUG
 
 test.ribbon.listOfServers: localhost:8080

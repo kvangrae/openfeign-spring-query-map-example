@@ -1,4 +1,4 @@
-package test.getpostbug;
+package test.openfeign.spring.query.map;
 
 public interface HelloWorldService {
 

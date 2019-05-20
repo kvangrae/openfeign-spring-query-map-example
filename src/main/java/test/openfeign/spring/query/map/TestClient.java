@@ -1,4 +1,4 @@
-package test.getpostbug;
+package test.openfeign.spring.query.map;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;
